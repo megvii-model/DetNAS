@@ -19,9 +19,9 @@ In addition, this project is based on [maskrcnn-benchmark](https://github.com/fa
 | DetNAS-COCO-FPN-3.8G | 21.6 | 42.0 | [ImageNet](https://drive.google.com/file/d/1Wk79vAt0PsC5ImdyPJliGmvdWzZQLCEk/view?usp=sharing) [COCO](https://drive.google.com/drive/folders/1laqDssuciUtxiY9vJv2-x27VyxvylBWN?usp=sharing)|
 | DetNAS-COCO-RetinaNet-300M | 26.0 | 34.1 | [ImageNet](https://drive.google.com/file/d/1L0WfmULKXD95ysLMMtD9SgMr8KWuDdsw/view?usp=sharing)  [COCO](https://drive.google.com/drive/folders/10dvSzIyfhWRvxZZ1GQ-FEG6QNuxoGlRx?usp=sharing)|
 
-The training scripts of these model are in the dirctory `scripts\`. For training,
-- Download the ImageNet model to the directory `ImageNet-Pretrain-models\`
-- `bash scripts\run_detnas_coco_fpn_300M.sh`
+The training scripts of these model are in the dirctory `scripts/`. For training,
+- Download the ImageNet model to the directory `ImageNet-Pretrain-models/`
+- `bash scripts/run_detnas_coco_fpn_300M.sh`
 
 ## Search for networks
 ### setup Dataset
@@ -31,10 +31,10 @@ The training scripts of these model are in the dirctory `scripts\`. For training
 
 ### Supernet training
 #### ImageNet pre-training
-- Download the ImageNet [supernet](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing) model to the directory `ImageNet-Pretrain-models\`
+- Download the ImageNet [supernet](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing) model to the directory `ImageNet-Pretrain-models/`
 - If necessary, you can also [train models ImageNet](https://github.com/megvii-model/ShuffleNet-Series) by yourselves.
 #### COCO training
-- `bash scripts\run_detnas_coco_fpn_300M_search.sh`
+- `bash scripts/run_detnas_coco_fpn_300M_search.sh`
 - (ensure '-search' in cfg.MODEL.BACKBONE.CONV_BODY to distinguish the supernet training and single model training)
 
 ### setup a server for the distributed search
@@ -65,7 +65,7 @@ Please cite DetNAS in your publications if it helps your research.
 ```
 @misc{chen2019detnas,
     title={DetNAS: Backbone Search for Object Detection},
-    author={Yukang Chen1, Tong Yang, Xiangyu Zhang, Gaofeng Meng, Xinyu Xiao, Jian Sun},
+    author={Yukang Chen, Tong Yang, Xiangyu Zhang, Gaofeng Meng, Xinyu Xiao, Jian Sun},
     year={2019},
     booktitle = {NeurIPS},
 }
