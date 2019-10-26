@@ -26,7 +26,7 @@ The training scripts of these model are in the dirctory `scripts/`. For training
 ## Search for networks
 ### Step 1: setup Dataset
 - We have splitted 5000 images from `coco_2014_train`+`coco_2014_valminusminival` as the validation set for search. The remainings are used for supernet training. 
-- Download the splitted train and val json files ([GoogleDrive]()) to `datasets/coco/annotations`.
+- Download the splitted train and val json files ([GoogleDrive](https://drive.google.com/drive/folders/1J32d8D2zFrjLJj1lcFJ4mm-yeSuYegbF?usp=sharing)) to `datasets/coco/annotations`.
 - (You can replace them with your own datasets.)
 
 ### Step 2: Supernet training
