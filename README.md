@@ -25,18 +25,18 @@ The training scripts of these model are in the dirctory `scripts/`. For training
 - `bash scripts/run_detnas_coco_fpn_300M.sh`
 
 ## Search for networks
-### setup Dataset
-- We have splitted 5000 images from `coco_2014_train+coco_2014_valminusminival` as the validation set for search. The remainings are left for supernet training. 
+### Step 1: setup Dataset
+- We have splitted 5000 images from `coco_2014_train`+`coco_2014_valminusminival` as the validation set for search. The remainings are left for supernet training. 
 - Download the splitted [train](https://drive.google.com/file/d/1eE254cB-nywDS0xSdlOT9E6cW6im4aZq/view?usp=sharing) and [val](https://drive.google.com/file/d/1bfT8Z_69bvvQEaBZUqBlKJd7wRsUDSam/view?usp=sharing) json files to `datasets/coco/annotations`
 - (You replace them with your own datasets.)
 
-### Supernet training
+### Step 2: Supernet training
 #### ImageNet pre-training
 - Download the ImageNet [supernet](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing) model to the directory `ImageNet-Pretrain-models/`
 - If necessary, you can also [train models ImageNet](https://github.com/megvii-model/ShuffleNet-Series) by yourselves.
 #### COCO training
 - `bash scripts/run_detnas_coco_fpn_300M_search.sh`
-- (ensure '-search' in cfg.MODEL.BACKBONE.CONV_BODY to distinguish the supernet training and single model training)
+- (ensure '-search' in cfg.MODEL.BACKBONE.CONV_BODY to distinguish supernet training from single model)
 
 ### setup a server for the distributed search
 ```
@@ -48,13 +48,13 @@ sudo rabbitmqctl add_user test test
 sudo rabbitmqctl set_permissions -p / test '.*' '.*' '.*'
 ```
 
-### start a new tmux for search
+### Step 3: start a new tmux for search
 - `tmux new -s search`
 - modify `host` and `log_dir` in the config file `distributed_arch_search/arch_search_config.py` according to your own machine.
 - `bash distributed_arch_search/run_search.sh`
 - (`run_search.sh` requires no **GPUs**.)
 
-### start new tmuxs for model evaluation
+### Step 4: start new tmuxs for model evaluation
 - `tmux new -s server_x`
 - modify `config-file` and `MODEL.WEIGHT` in the config file `distributed_arch_search/run_server.sh` according to your own machine.
 - `bash distributed_arch_search/run_server.sh`
