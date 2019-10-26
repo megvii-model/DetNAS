@@ -38,7 +38,7 @@ The training scripts of these model are in the dirctory `scripts/`. For training
 - `bash scripts/run_detnas_coco_fpn_300M_search.sh`
 - (ensure '-search' in cfg.MODEL.BACKBONE.CONV_BODY to distinguish supernet training from single model)
 
-### setup a server for the distributed search
+### Step 3: setup a server for the distributed search
 ```
 tmux new -s mq_server
 sudo apt update
@@ -48,13 +48,13 @@ sudo rabbitmqctl add_user test test
 sudo rabbitmqctl set_permissions -p / test '.*' '.*' '.*'
 ```
 
-### Step 3: start a new tmux for search
+### Step 4: start a new tmux for search
 - `tmux new -s search`
 - modify `host` and `log_dir` in the config file `distributed_arch_search/arch_search_config.py` according to your own machine.
 - `bash distributed_arch_search/run_search.sh`
 - (`run_search.sh` requires no **GPUs**.)
 
-### Step 4: start new tmuxs for model evaluation
+### Step 5: start new tmuxs for model evaluation
 - `tmux new -s server_x`
 - modify `config-file` and `MODEL.WEIGHT` in the config file `distributed_arch_search/run_server.sh` according to your own machine.
 - `bash distributed_arch_search/run_server.sh`
