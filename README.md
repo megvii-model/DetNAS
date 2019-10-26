@@ -13,11 +13,10 @@ In addition, this project is based on [maskrcnn-benchmark](https://github.com/fa
 
 | Model | ImageNet acc| AP (minival) |  GoogleDrive |
 | --- | :---: | :---: | :---: |
-| DetNAS-COCO-FPN-300M | 26.2 | 36.6 | [ImageNet](https://drive.google.com/file/d/14cMxdJq5_ELOB-4J1K6DF1MbaDtaEOmw/view?usp=sharing)    [COCO](https://drive.google.com/drive/folders/1JBOwmHoImfejerApL_GTfDLoAZnU5hIq?usp=sharing)|
-| DetNAS-COCO-FPN-1.3G | 22.8 | 40.3 | [ImageNet](https://drive.google.com/file/d/1Kkyb_Y3BVGYGiZ44Y1Zv51quuymcn6z2/view?usp=sharing)    [COCO](https://drive.google.com/drive/folders/1acPy4pqSMd26Y1-dgPm4oKrDHboSDYkN?usp=sharing)|
-| DetNAS-COCO-FPN-3.8G | 21.6 | 42.0 | [ImageNet](https://drive.google.com/file/d/1Wk79vAt0PsC5ImdyPJliGmvdWzZQLCEk/view?usp=sharing)    [COCO](https://drive.google.com/drive/folders/1laqDssuciUtxiY9vJv2-x27VyxvylBWN?usp=sharing)|
-| DetNAS-COCO-RetinaNet-300M | 26.0 | 34.1 | [ImageNet](https://drive.google.com/file/d/1L0WfmULKXD95ysLMMtD9SgMr8KWuDdsw/view?usp=sharing)    [COCO](https://drive.google.com/drive/folders/10dvSzIyfhWRvxZZ1GQ-FEG6QNuxoGlRx?usp=sharing)|
-
+| DetNAS-COCO-FPN-300M | 26.2 | 36.6 | [ImageNet](https://drive.google.com/file/d/14cMxdJq5_ELOB-4J1K6DF1MbaDtaEOmw/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/1JBOwmHoImfejerApL_GTfDLoAZnU5hIq?usp=sharing)|
+| DetNAS-COCO-FPN-1.3G | 22.8 | 40.3 | [ImageNet](https://drive.google.com/file/d/1Kkyb_Y3BVGYGiZ44Y1Zv51quuymcn6z2/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/1acPy4pqSMd26Y1-dgPm4oKrDHboSDYkN?usp=sharing)|
+| DetNAS-COCO-FPN-3.8G | 21.6 | 42.0 | [ImageNet](https://drive.google.com/file/d/1Wk79vAt0PsC5ImdyPJliGmvdWzZQLCEk/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/1laqDssuciUtxiY9vJv2-x27VyxvylBWN?usp=sharing)|
+| DetNAS-COCO-RetinaNet-300M | 26.0 | 34.1 | [ImageNet](https://drive.google.com/file/d/1L0WfmULKXD95ysLMMtD9SgMr8KWuDdsw/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/10dvSzIyfhWRvxZZ1GQ-FEG6QNuxoGlRx?usp=sharing)|
 
 
 The training scripts of these model are in the dirctory `scripts/`. For training,
