@@ -49,13 +49,13 @@ sudo rabbitmqctl set_permissions -p / test '.*' '.*' '.*'
 
 ### Step 4: start a new tmux for search
 - `tmux new -s search`
-- modify `host` and `log_dir` in the config file `distributed_arch_search/arch_search_config.py` according to your own machine.
+- modify `host` and `log_dir` in the config file `distributed_arch_search/arch_search_config.py`.
 - `bash distributed_arch_search/run_search.sh`
 - (`run_search.sh` requires no **GPUs**.)
 
 ### Step 5: start new tmuxs for model evaluation
 - `tmux new -s server_x`
-- modify `config-file` and `MODEL.WEIGHT` in the config file `distributed_arch_search/run_server.sh` according to your own machine.
+- modify `config-file` and `MODEL.WEIGHT` in the script file `distributed_arch_search/run_server.sh`.
 - `bash distributed_arch_search/run_server.sh`
 - (You can start more than one `run_server.sh` to speed up, if you have enough **GPUs** and **memory** researces.)
 
