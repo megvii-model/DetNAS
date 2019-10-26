@@ -6,7 +6,7 @@ In addition, this project is based on [maskrcnn-benchmark](https://github.com/fa
 ![introduce image](demo/pipeline.jpg)
 
 ## Installation
-- Modify the path to your coco dataset in config.sh .
+- Modify the path to your coco dataset in config.sh.
 - `bash config.sh`
 
 ## Trained Models
