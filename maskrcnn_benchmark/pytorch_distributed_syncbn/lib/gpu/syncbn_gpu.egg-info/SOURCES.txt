@@ -1,0 +1,7 @@
+setup.py
+syncbn_cuda.cpp
+syncbn_cuda_kernel.cu
+syncbn_gpu.egg-info/PKG-INFO
+syncbn_gpu.egg-info/SOURCES.txt
+syncbn_gpu.egg-info/dependency_links.txt
+syncbn_gpu.egg-info/top_level.txt
