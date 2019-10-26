@@ -1,4 +1,5 @@
 ## Installation
+This project is based on [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark). For the basic installation, we directly follow maskrcnn-benchmark.
 
 ### Requirements:
 - PyTorch 1.0 from a nightly release. It **will not** work with 1.0 nor 1.0.1. Installation instructions can be found in https://pytorch.org/get-started/locally/
