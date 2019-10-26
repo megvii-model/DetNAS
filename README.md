@@ -26,12 +26,12 @@ The training scripts of these model are in the dirctory `scripts/`. For training
 ## Search for networks
 ### Step 1: setup Dataset
 - We have splitted 5000 images from `coco_2014_train`+`coco_2014_valminusminival` as the validation set for search. The remainings are used for supernet training. 
-- Download the splitted [train](https://drive.google.com/file/d/1eE254cB-nywDS0xSdlOT9E6cW6im4aZq/view?usp=sharing) and [val](https://drive.google.com/file/d/1bfT8Z_69bvvQEaBZUqBlKJd7wRsUDSam/view?usp=sharing) json files to `datasets/coco/annotations`.
+- Download the splitted train and val json files ([GoogleDrive]()) to `datasets/coco/annotations`.
 - (You can replace them with your own datasets.)
 
 ### Step 2: Supernet training
 #### ImageNet pre-training
-- Download the ImageNet [supernet](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing) model to the directory `ImageNet-Pretrain-models/`.
+- Download the ImageNet supernet model ([GoogleDrive](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing)) to the directory `ImageNet-Pretrain-models/`.
 - If necessary, you can also [train models ImageNet](https://github.com/megvii-model/ShuffleNet-Series) by yourselves.
 #### COCO training
 - `bash scripts/run_detnas_coco_fpn_300M_search.sh`
