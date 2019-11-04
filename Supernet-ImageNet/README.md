@@ -23,6 +23,5 @@ data
 Train supernet with the following command:
 
 ```bash
-cd src/Supernet
 python3 train.py --train-dir $YOUR_TRAINDATASET_PATH --val-dir $YOUR_VALDATASET_PATH --model-size DETNAS-300M
 ```
