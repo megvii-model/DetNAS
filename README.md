@@ -32,7 +32,7 @@ The training scripts of these model are in the dirctory `scripts/`. For training
 ### Step 2: Supernet training
 #### ImageNet pre-training
 - Download the ImageNet supernet model ([GoogleDrive](https://drive.google.com/file/d/1ia8IId-OLqvb-603P4JH3lXToFjaMWHm/view?usp=sharing)) to the directory `ImageNet-Pretrain-models/`.
-- If necessary, you can also [train models ImageNet](https://github.com/megvii-model/ShuffleNet-Series) by yourselves (refer to the folder `Supernet-ImageNet/`).
+- If necessary, you can also [train models ImageNet](https://github.com/megvii-model/ShuffleNet-Series) by yourselves. Please refer to the folder `Supernet-ImageNet/`.
 #### COCO training
 - `bash scripts/run_detnas_coco_fpn_300M_search.sh`
 - ('-search' in cfg.MODEL.BACKBONE.CONV_BODY is to distinguish supernet training from single model.)
