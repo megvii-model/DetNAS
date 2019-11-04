@@ -7,8 +7,6 @@ This part is modified from the [ImageNet project](https://github.com/megvii-mode
 
 Download the ImageNet Dataset and move validation images to labeled subfolders. To do this, you can use the following script: [https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh](https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh)
 
-Download the flops table to accelerate Flops calculation which is required in Uniform Sampling. It can be found in `$Link/op_flops_dict.pkl`.
-
 We recommend to create a folder `data` and use it in both Supernet training and Evaluation training.
 
 Here is a example structure of `data`:
