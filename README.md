@@ -53,7 +53,7 @@ sudo rabbitmqctl set_permissions -p / test '.*' '.*' '.*'
 - `bash distributed_arch_search/run_search.sh`
 - (`run_search.sh` requires no **GPUs**.)
 
-### Step 5: start new tmuxs for model evaluation
+### Step 5: start new tmuxs for model evaluation (concurrent with Step 4)
 - `tmux new -s server_x`
 - modify `config-file` and `MODEL.WEIGHT` in the script file `distributed_arch_search/run_server.sh`.
 - `bash distributed_arch_search/run_server.sh`
