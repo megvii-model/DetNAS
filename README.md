@@ -59,6 +59,8 @@ sudo rabbitmqctl set_permissions -p / test '.*' '.*' '.*'
 - `bash distributed_arch_search/run_server.sh`
 - (You can start more than one `run_server.sh` to speed up, if you have enough **GPUs** and **memory** researces.)
 
+![search_process](demo/search_process.png)
+
 ## Citation
 Please cite DetNAS in your publications if it helps your research. 
 
