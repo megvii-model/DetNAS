@@ -65,7 +65,7 @@ def get_args():
     parser.add_argument('--eval', default=False, action='store_true')
     parser.add_argument('--eval-resume', type=str, default='./snet_detnas.pkl', help='path for eval model')
     parser.add_argument('--batch-size', type=int, default=1024, help='batch size')
-    parser.add_argument('--total-iters', type=int, default=150000, help='total iters')
+    parser.add_argument('--total-iters', type=int, default=300000, help='total iters')
     parser.add_argument('--learning-rate', type=float, default=0.5, help='init learning rate')
     parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
     parser.add_argument('--weight-decay', type=float, default=4e-5, help='weight decay')
