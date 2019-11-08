@@ -206,9 +206,9 @@ def train(model, device, args, *, val_interval, bn_process=False, all_iters=None
         target = target.type(torch.LongTensor)
         data, target = data.to(device), target.to(device)
         data_time = time.time() - d_st
-
-
-        get_random_cand = lambda:tuple(np.random.randint(4) for i in range(20))
+        
+        len_cand = 20 if '300M' in args.model_size else 40
+        get_random_cand = lambda:tuple(np.random.randint(4) for i in range(len_cand))
         flops_l, flops_r, flops_step = 290, 360, 10
         bins = [[i, i+flops_step] for i in range(flops_l, flops_r, flops_step)]
 
