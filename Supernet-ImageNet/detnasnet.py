@@ -75,6 +75,8 @@ class ShuffleNetV2DetNAS(nn.Module):
                     nn.init.constant_(m.bias, 0)
 
     def forward(self, x, rngs=None):
+        if rngs is None:
+            rngs = tuple(np.random.randint(4) for i in range(sum(self.stage_repeats)))
         assert sum(self.stage_repeats) == len(rngs)
         x = self.first_conv(x)
 
