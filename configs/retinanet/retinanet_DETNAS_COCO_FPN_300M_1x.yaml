@@ -1,6 +1,6 @@
 MODEL:
   META_ARCHITECTURE: "GeneralizedRCNN"
-  WEIGHT: "DetNAS-models/COCO_RetinaNet_300M.pkl"
+  WEIGHT: "ImageNet-Pretrain-models/COCO_RetinaNet_300M.pkl"
   RPN_ONLY: True
   RETINANET_ON: True
   BACKBONE:
