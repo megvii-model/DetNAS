@@ -11,7 +11,7 @@ In addition, this project is based on [maskrcnn-benchmark](https://github.com/fa
 
 ## Trained Models
 
-| Model | ImageNet acc| AP (minival) |  GoogleDrive |
+| Model | ImageNet err| AP (minival) |  GoogleDrive |
 | --- | :---: | :---: | :---: |
 | DetNAS-COCO-FPN-300M | 26.2 | 36.6 | [ImageNet](https://drive.google.com/file/d/14cMxdJq5_ELOB-4J1K6DF1MbaDtaEOmw/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/1JBOwmHoImfejerApL_GTfDLoAZnU5hIq?usp=sharing)|
 | DetNAS-COCO-FPN-1.3G | 22.8 | 40.3 | [ImageNet](https://drive.google.com/file/d/1Kkyb_Y3BVGYGiZ44Y1Zv51quuymcn6z2/view?usp=sharing)&emsp;[COCO](https://drive.google.com/drive/folders/1acPy4pqSMd26Y1-dgPm4oKrDHboSDYkN?usp=sharing)|
